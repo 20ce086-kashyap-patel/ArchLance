@@ -1,0 +1,42 @@
+{
+    "password": {
+        "username": "meshvp",
+        "password": "1234",
+        "is_superuser": true
+    },
+    "login": {
+        "Post": {
+            "username": "meshvp",
+            "password": "1234"
+        },
+        "response": {
+            "token": "abc"
+        }
+    },
+    "Signup": {
+        "Post": {
+            "username": "meshvp",
+            "password": "1234"
+        },
+        "response": {
+            "username": "meshvp",
+            "password": "1234"
+        }
+    },
+    "Account": {
+        "Get": {
+            "Find by": "req.user.id  <--> Client User",
+            "type": "Client",
+            "response": {
+                "username": "meshvp",
+                "Name": "Meshv Patel",
+                "Number": 12346789,
+                "Profile_pic": "profile.jpg",
+                "Email": "abc@gmail.com"
+            }
+        }
+    },
+    "search": {
+        "Find by": ["Username","Name"]
+    }
+}
